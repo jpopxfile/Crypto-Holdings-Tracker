@@ -1,3 +1,5 @@
+var pricing_data = getData();
+
 function getData() {
    var data = {};
    var response = UrlFetchApp.fetch("https://api.coinmarketcap.com/v1/ticker/?limit=0");
@@ -16,6 +18,5 @@ function getData() {
 }
 
 function getPrice(ticker){
-   var pricing_data = getData();
    return (pricing_data[ticker]) 
 }
